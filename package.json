@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/hyperrex/voter-status-backend/issues"
   },
-  "homepage": "https://github.com/hyperrex/voter-status-backend#readme"
+  "homepage": "https://github.com/hyperrex/voter-status-backend#readme",
+  "dependencies": {
+    "knex": "^0.15.2",
+    "pg": "^7.4.3"
+  }
 }
