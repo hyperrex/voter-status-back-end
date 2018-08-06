@@ -21,6 +21,7 @@
   "homepage": "https://github.com/hyperrex/voter-status-backend#readme",
   "dependencies": {
     "knex": "^0.15.2",
+    "parse-address": "^1.0.0",
     "pg": "^7.4.3",
     "puppeteer": "^1.6.2"
   }
