@@ -3,12 +3,13 @@ exports.up = function(knex, Promise) {
   return Promise.all([
     knex.schema.createTable('users', function(table) {
       table.increments('id').primary();
-      table.integer('remote_id')
+      table.integer('remote_id'); // assuming I can connect to an endpoint, I might be able to get this
       table.string('email').notNullable().unique('email');
       table.string('password').notNullable();
-      //replace above line with: table.specificType('hashedPassword', 'char(60)').notNullable();
+      // replace above line with: table.specificType('hashedPassword', 'char(60)').notNullable();
       table.string('birthdate');
       table.integer('last_four_ssn'); // later, also add in CDL
+      table.string('address');
       table.boolean('voter_status');
       table.string('registration_date');
       table.boolean('vote_by_mail');
