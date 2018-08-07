@@ -1,5 +1,5 @@
 
-exports.seed = function(knex, Promise) {
+exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
   return knex('users').del()
     .then(function () {
@@ -41,8 +41,8 @@ exports.seed = function(knex, Promise) {
           party: 'Democratic',
           language: 'English'
         }
-      ]);
-    });
+      ])
+    })
     .then( function() {
       return knex.raw(
         "SELECT setval('users_id_seq', (SELECT MAX(id) FROM users));"

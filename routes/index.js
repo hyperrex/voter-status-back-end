@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
-const knex = require('../knex');
+var express = require('express')
+var router = express.Router()
+// const knex = require('../knex')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Voter Status Alert' });
-});
+router.get('/', function (req, res, next) {
+  res.render('index', { title: 'Voter Status Alert' })
+})
 
-module.exports = router;
+module.exports = router
