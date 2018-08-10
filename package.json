@@ -1,31 +1,21 @@
 {
   "name": "voter-status-backend",
-  "version": "1.0.0",
-  "description": "Galvanize G88 WDI Q3 project - back end",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && node my-tests.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hyperrex/voter-status-backend.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hyperrex/voter-status-backend/issues"
-  },
-  "homepage": "https://github.com/hyperrex/voter-status-backend#readme",
   "dependencies": {
-    "knex": "^0.15.2",
-    "parse-address": "^1.0.0",
-    "pg": "^7.4.3",
-    "puppeteer": "^1.6.2"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "ejs": "*",
+    "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
     "standard": "^11.0.1"
   }
 }

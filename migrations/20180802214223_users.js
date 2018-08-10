@@ -10,6 +10,15 @@ exports.up = function (knex, Promise) {
       table.string('birthdate')
       table.integer('last_four_ssn') // later, also add in CDL
       table.string('address')
+      /*
+      table.integer('street_number')
+      table.string('direction_prefix')
+      table.string('street')
+      table.string('street_type')
+      table.string('city')
+      table.string('state')
+      table.integer('zipcode')
+      */
       table.boolean('voter_status')
       table.string('registration_date')
       table.boolean('vote_by_mail')
