@@ -17,7 +17,6 @@ router.post('/', function(req, res, next) {
   knex('users')
   .where({email: 'guy.fleegman@NSEA-Protector.com'})
   .then()
-  })
 })
 
 module.exports = router;
