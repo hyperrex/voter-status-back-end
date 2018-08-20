@@ -7,7 +7,9 @@ exports.up = function (knex, Promise) {
       table.string('email').notNullable().unique('email')
       table.string('password').notNullable()
       // replace above line with: table.specificType('hashedPassword', 'char(60)').notNullable();
-      table.string('birthdate')
+      table.integer('bd_month')
+      table.integer('bd_day')
+      table.integer('bd_year')
       table.integer('last_four_ssn') // later, also add in CDL
       table.string('address')
       /*
