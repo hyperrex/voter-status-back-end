@@ -6,17 +6,37 @@ const knex = require('../knex');
 router.get('/', function(req, res, next) {
   knex('users')
   .then((usersArray) => {
+    console.log(usersArray)
     res.send(usersArray)
   })
 })
 
-// POST name
+// /* GET all listings for a single user*/
+// router.get('/:userid', function(req, res, next) {
+//   knex('users')
+//   .where('id', req.params.userid)
+//   .then((data) => {
+//     console.log('the specific user', data)
+//     res.send(data)
+//   })
+// });
+
+// POST all
 router.post('/', function(req, res, next) {
-  console.log('fnord')
-  // send this data to the scraper and get back a Response
   knex('users')
-  .where({email: 'guy.fleegman@NSEA-Protector.com'})
-  .then()
+  .then((usersArray) => {
+    console.log(usersArray)
+    res.send(usersArray)
+  })
+})
+
+// POST create new user
+router.post('/', function(req, res, next) {
+  knex('users')
+  .then((usersArray) => {
+    console.log(usersArray)
+    res.send(usersArray)
+  })
 })
 
 module.exports = router;
